@@ -1,2 +1,2 @@
-# highlight-weekends-special-regions-flutter-event-calendar
-How to highlight the weekends in Flutter event calendar (SfCalendar)?
+**[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11712/how-to-highlight-the-weekends-in-flutter-event-calendar-sfcalendar)**
+
