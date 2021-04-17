@@ -20,10 +20,12 @@ class ScheduleExample extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SfCalendar(
-          view: CalendarView.week,
-          dataSource: getCalendarDataSource(),
-          specialRegions: _getTimeRegions(),
+        body: SafeArea(
+          child: SfCalendar(
+            view: CalendarView.week,
+            dataSource: getCalendarDataSource(),
+            specialRegions: _getTimeRegions(),
+          ),
         ),
       ),
     );
@@ -68,11 +70,11 @@ class ScheduleExample extends State<MyApp> {
   List<TimeRegion> _getTimeRegions() {
     final List<TimeRegion> regions = <TimeRegion>[];
     regions.add(TimeRegion(
-        startTime: DateTime(2020, 5, 29, 00, 0, 0),
-        endTime: DateTime(2020, 5, 29, 24, 0, 0),
-        recurrenceRule: 'FREQ=WEEKLY;INTERVAL=1;BYDAY=SAT,SUN',
-        color: Color(0xffbD3D3D3),
-     ));
+      startTime: DateTime(2020, 5, 29, 00, 0, 0),
+      endTime: DateTime(2020, 5, 29, 24, 0, 0),
+      recurrenceRule: 'FREQ=WEEKLY;INTERVAL=1;BYDAY=SAT,SUN',
+      color: Color(0xffbD3D3D3),
+    ));
 
     return regions;
   }
@@ -83,3 +85,4 @@ class _DataSource extends CalendarDataSource {
     appointments = source;
   }
 }
+
