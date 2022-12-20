@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatefulWidget {
+  const MyApp({super.key});
+
   @override
   State<StatefulWidget> createState() => ScheduleExample();
 }
@@ -68,7 +69,7 @@ class ScheduleExample extends State<MyApp> {
       startTime: DateTime(2020, 5, 29, 00, 0, 0),
       endTime: DateTime(2020, 5, 29, 24, 0, 0),
       recurrenceRule: 'FREQ=WEEKLY;INTERVAL=1;BYDAY=SAT,SUN',
-      color: Color(0xffbD3D3D3),
+      color: const Color(0xffbD3D3D3),
     ));
 
     return regions;
@@ -80,4 +81,3 @@ class _DataSource extends CalendarDataSource {
     appointments = source;
   }
 }
-
