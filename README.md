@@ -6,6 +6,8 @@ You can highlight weekend time slots in the Flutter Event Calendar by using the 
 
 In this sample, Using the recurrence rule property of the time region the time regions are added on weekends.
 
+![Timeregion](https://user-images.githubusercontent.com/46158936/209291742-8199f4db-ec28-47a6-bce1-05b85a781208.jpeg)
+
 For more details, refer to our UG documentation [SpecialRegion](https://help.syncfusion.com/flutter/calendar/timeslot-views#special-time-regions).
 
 ## Requirements to run the demo
